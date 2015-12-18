@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EasyGrid</key>
+	<true/>
+	<key>Cols</key>
+	<array>
+		<integer>16</integer>
+		<integer>92</integer>
+		<integer>168</integer>
+		<integer>244</integer>
+	</array>
+	<key>Rows</key>
+	<array>
+		<integer>14</integer>
+		<integer>102</integer>
+		<integer>190</integer>
+		<integer>278</integer>
+	</array>
+	<key>Cols-7-Short</key>
+	<array>
+		<integer>16</integer>
+		<integer>92</integer>
+		<integer>168</integer>
+		<integer>244</integer>
+	</array>
+	<key>Rows-7-Short</key>
+	<array>
+		<string>5</string>
+		<string>93</string>
+		<string>181</string>
+		<string>269</string>
+	</array>
+</dict>
+</plist>

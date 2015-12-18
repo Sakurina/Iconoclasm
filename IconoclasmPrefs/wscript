@@ -1,0 +1,13 @@
+def build(bld):
+  print(' → building preference bundle')
+  bld(source='IconoclasmPrefs.m')
+  bld(source='IconoclasmPrefs.o',
+      target='IconoclasmPrefs', 
+      rule='export DEVELOPER_DIR=${XCODE_PATH}; xcrun --sdk iphoneos${SDK_VERSION} ${C_COMPILER_EXEC} -arch ${ARCHITECTURE} ${GLOBAL_LDFLAGS} -framework UIKit -framework Preferences -bundle ${SRC} -o ${TGT}')
+
+  #bld.install_files('${PREFIX}/System/Library/PreferenceBundles/IconoclasmPrefs.bundle', 'IconoclasmPrefs')
+
+def lipo(ctx):
+  ctx.exec_command("strip -X build/armv7/IconoclasmPrefs/IconoclasmPrefs")
+  ctx.exec_command("strip -X build/arm64/IconoclasmPrefs/IconoclasmPrefs")
+  ctx.exec_command('lipo -create build/arm64/IconoclasmPrefs/IconoclasmPrefs build/armv7/IconoclasmPrefs/IconoclasmPrefs -output net.r-ch.iconoclasm/System/Library/PreferenceBundles/IconoclasmPrefs.bundle/IconoclasmPrefs')

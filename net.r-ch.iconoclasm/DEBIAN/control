@@ -1,0 +1,11 @@
+Package: net.r-ch.iconoclasm
+Name: Iconoclasm
+Version: 1.11
+Architecture: iphoneos-arm
+Description: easily customizable icon layout framework
+Maintainer: Yanik Magnan <kirbykirbykirby@gmail.com>
+Author: Yanik Magnan <kirbykirbykirby@gmail.com>
+Section: Tweaks
+Pre-Depends: mobilesubstrate, gsc.armv7
+Depends: firmware (>= 4.3), preferenceloader, com.chpwn.iconsupport (>> 1.7.7)
+Conflicts: net.r-ch.fcsb, com.macciti.fiveirows, com.touchmania.fiveirows, com.touchmania.fiveirowsnorm

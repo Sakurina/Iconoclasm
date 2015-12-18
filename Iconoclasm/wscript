@@ -1,0 +1,11 @@
+def build(bld):
+  print(' → building Iconoclasm.dylib')  
+  bld(source='Iconoclasm.mm ICFreeformLayout.mm ICGridLayout.mm ICRawScaleEngine.mm ICiPadLandscapeScaleEngine.mm ICiPadScaleEngine.mm ICTallScaleEngine.mm ICShortScaleEngine.mm ICiPhoneSixScaleEngine.mm ICiPhoneSixPlusPortraitScaleEngine.mm ICiPhoneSixPlusLandscapeScaleEngine.mm')
+  bld(source='Iconoclasm.o ICFreeformLayout.o ICGridLayout.o ICRawScaleEngine.o ICiPadLandscapeScaleEngine.o ICiPadScaleEngine.o ICTallScaleEngine.o ICShortScaleEngine.o ICiPhoneSixScaleEngine.o ICiPhoneSixPlusPortraitScaleEngine.o ICiPhoneSixPlusLandscapeScaleEngine.o',
+      target='Iconoclasm.dylib',
+      rule ='export DEVELOPER_DIR=${XCODE_PATH}; xcrun --sdk iphoneos${SDK_VERSION} ${CPP_COMPILER_EXEC} -arch ${ARCHITECTURE} ${SUBSTRATE_LDFLAGS} -framework UIKit -framework CoreGraphics ${SRC} -o ${TGT}')
+
+def lipo(ctx):
+  ctx.exec_command("strip -X build/armv7/Iconoclasm/Iconoclasm.dylib")
+  ctx.exec_command("strip -X build/arm64/Iconoclasm/Iconoclasm.dylib")
+  ctx.exec_command('lipo -create build/arm64/Iconoclasm/Iconoclasm.dylib build/armv7/Iconoclasm/Iconoclasm.dylib -output net.r-ch.iconoclasm/Library/MobileSubstrate/DynamicLibraries/Iconoclasm.dylib')

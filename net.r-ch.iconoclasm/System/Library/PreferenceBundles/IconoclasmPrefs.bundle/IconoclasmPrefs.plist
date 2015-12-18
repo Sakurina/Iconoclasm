@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>alternateColors</key>
+			<true/>
+			<key>isDestructive</key>
+			<true/>
+			<key>set</key>
+			<string>setToggle:specifier:</string>
+			<key>defaults</key>
+			<string>net.r-ch.iconoclasm</string>
+			<key>key</key>
+			<string>Enable</string>
+			<key>id</key>
+			<string>Enable</string>
+			<key>label</key>
+			<string>Enable Iconoclasm</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Uniform Layout</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>CurrentLayout</string>
+			<key>default</key>
+			<string>Five-Column SB (5x4)</string>
+			<key>defaults</key>
+			<string>net.r-ch.iconoclasm</string>
+			<key>name</key>
+			<string>Layout</string>
+			<key>label</key>
+			<string>Layout</string>
+			<key>key</key>
+			<string>CurrentLayout</string>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>valuesDataSource</key>
+			<string>layouts</string>
+			<key>titlesDataSource</key>
+			<string>layouts</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Extras</string>
+			<key>footerText</key>
+			<string>If enabled, the Extras layout is displayed in folders on iOS 7 and later, or with compatible extensions on iOS 6 and earlier.</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>net.r-ch.iconoclasm</string>
+			<key>key</key>
+			<string>ExtrasEnabled</string>
+			<key>id</key>
+			<string>ExtrasEnabled</string>
+			<key>label</key>
+			<string>Enable Extras Layout</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>ExtrasLayout</string>
+			<key>default</key>
+			<string>Five-Column SB (5x4)</string>
+			<key>defaults</key>
+			<string>net.r-ch.iconoclasm</string>
+			<key>name</key>
+			<string>Layout</string>
+			<key>label</key>
+			<string>Layout</string>
+			<key>key</key>
+			<string>ExtrasLayout</string>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>valuesDataSource</key>
+			<string>layouts</string>
+			<key>titlesDataSource</key>
+			<string>layouts</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>PPGroup</string>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Per-Page Layouts</string>
+			<key>footerText</key>
+			<string>This feature is only supported on iOS 5 and up.</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>net.r-ch.iconoclasm</string>
+			<key>key</key>
+			<string>PerPageLayoutsEnabled</string>
+			<key>id</key>
+			<string>PerPageLayoutsEnabled</string>
+			<key>label</key>
+			<string>Per-Page Layouts</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>PerPageLayout-Page0</string>
+			<key>default</key>
+			<string>Five-Column SB (5x4)</string>
+			<key>defaults</key>
+			<string>net.r-ch.iconoclasm</string>
+			<key>name</key>
+			<string>Page 1</string>
+			<key>label</key>
+			<string>Page 1</string>
+			<key>key</key>
+			<string>PerPageLayout-Page0</string>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>valuesDataSource</key>
+			<string>layouts</string>
+			<key>titlesDataSource</key>
+			<string>layouts</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>PerPageLayout-Page1</string>
+			<key>default</key>
+			<string>Five-Column SB (5x4)</string>
+			<key>defaults</key>
+			<string>net.r-ch.iconoclasm</string>
+			<key>name</key>
+			<string>Page 2</string>
+			<key>label</key>
+			<string>Page 2</string>
+			<key>key</key>
+			<string>PerPageLayout-Page1</string>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>valuesDataSource</key>
+			<string>layouts</string>
+			<key>titlesDataSource</key>
+			<string>layouts</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>PerPageLayout-Page2</string>
+			<key>default</key>
+			<string>Five-Column SB (5x4)</string>
+			<key>defaults</key>
+			<string>net.r-ch.iconoclasm</string>
+			<key>name</key>
+			<string>Page 3</string>
+			<key>label</key>
+			<string>Page 3</string>
+			<key>key</key>
+			<string>PerPageLayout-Page2</string>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>valuesDataSource</key>
+			<string>layouts</string>
+			<key>titlesDataSource</key>
+			<string>layouts</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>PerPageLayout-Page3</string>
+			<key>default</key>
+			<string>Five-Column SB (5x4)</string>
+			<key>defaults</key>
+			<string>net.r-ch.iconoclasm</string>
+			<key>name</key>
+			<string>Page 4</string>
+			<key>label</key>
+			<string>Page 4</string>
+			<key>key</key>
+			<string>PerPageLayout-Page3</string>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>valuesDataSource</key>
+			<string>layouts</string>
+			<key>titlesDataSource</key>
+			<string>layouts</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>PerPageLayout-Page4</string>
+			<key>default</key>
+			<string>Five-Column SB (5x4)</string>
+			<key>defaults</key>
+			<string>net.r-ch.iconoclasm</string>
+			<key>name</key>
+			<string>Page 5</string>
+			<key>label</key>
+			<string>Page 5</string>
+			<key>key</key>
+			<string>PerPageLayout-Page4</string>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>valuesDataSource</key>
+			<string>layouts</string>
+			<key>titlesDataSource</key>
+			<string>layouts</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>PerPageLayout-Page5</string>
+			<key>default</key>
+			<string>Five-Column SB (5x4)</string>
+			<key>defaults</key>
+			<string>net.r-ch.iconoclasm</string>
+			<key>name</key>
+			<string>Page 6</string>
+			<key>label</key>
+			<string>Page 6</string>
+			<key>key</key>
+			<string>PerPageLayout-Page5</string>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>valuesDataSource</key>
+			<string>layouts</string>
+			<key>titlesDataSource</key>
+			<string>layouts</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>PerPageLayout-Page6</string>
+			<key>default</key>
+			<string>Five-Column SB (5x4)</string>
+			<key>defaults</key>
+			<string>net.r-ch.iconoclasm</string>
+			<key>name</key>
+			<string>Page 7</string>
+			<key>label</key>
+			<string>Page 7</string>
+			<key>key</key>
+			<string>PerPageLayout-Page6</string>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>valuesDataSource</key>
+			<string>layouts</string>
+			<key>titlesDataSource</key>
+			<string>layouts</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>PerPageLayout-Page7</string>
+			<key>default</key>
+			<string>Five-Column SB (5x4)</string>
+			<key>defaults</key>
+			<string>net.r-ch.iconoclasm</string>
+			<key>name</key>
+			<string>Page 8</string>
+			<key>label</key>
+			<string>Page 8</string>
+			<key>key</key>
+			<string>PerPageLayout-Page7</string>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>valuesDataSource</key>
+			<string>layouts</string>
+			<key>titlesDataSource</key>
+			<string>layouts</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>PerPageLayout-Page8</string>
+			<key>default</key>
+			<string>Five-Column SB (5x4)</string>
+			<key>defaults</key>
+			<string>net.r-ch.iconoclasm</string>
+			<key>name</key>
+			<string>Page 9</string>
+			<key>label</key>
+			<string>Page 9</string>
+			<key>key</key>
+			<string>PerPageLayout-Page8</string>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>valuesDataSource</key>
+			<string>layouts</string>
+			<key>titlesDataSource</key>
+			<string>layouts</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>PerPageLayout-Page9</string>
+			<key>default</key>
+			<string>Five-Column SB (5x4)</string>
+			<key>defaults</key>
+			<string>net.r-ch.iconoclasm</string>
+			<key>name</key>
+			<string>Page 10</string>
+			<key>label</key>
+			<string>Page 10</string>
+			<key>key</key>
+			<string>PerPageLayout-Page9</string>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>valuesDataSource</key>
+			<string>layouts</string>
+			<key>titlesDataSource</key>
+			<string>layouts</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>PerPageLayout-Page10</string>
+			<key>default</key>
+			<string>Five-Column SB (5x4)</string>
+			<key>defaults</key>
+			<string>net.r-ch.iconoclasm</string>
+			<key>name</key>
+			<string>Page 11+</string>
+			<key>label</key>
+			<string>Page 11+</string>
+			<key>key</key>
+			<string>PerPageLayout-Page10</string>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>valuesDataSource</key>
+			<string>layouts</string>
+			<key>titlesDataSource</key>
+			<string>layouts</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>isStaticText</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Apply Changes &amp; Respring</string>
+			<key>action</key>
+			<string>respring:</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Get More Layouts</string>
+			<key>action</key>
+			<string>getMoreLayouts:</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>isStaticText</key>
+			<true/>
+			<key>footerText</key>
+			<string>Iconoclasm 1.11</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>isStaticText</key>
+			<true/>
+			<key>footerText</key>
+			<string>Thank you for the past six years.</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>isStaticText</key>
+			<true/>
+			<key>footerText</key>
+			<string>©2009-2015 Yanik Magnan</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>Iconoclasm</string>
+</dict>
+</plist>
